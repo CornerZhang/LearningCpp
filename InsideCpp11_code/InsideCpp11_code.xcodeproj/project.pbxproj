@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		659325B119EE455E00F6E6F2 /* testUsingConstructor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 659325AF19EE455E00F6E6F2 /* testUsingConstructor.cpp */; };
 		65A5362419ED62F80082DFC0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A5362319ED62F80082DFC0 /* main.cpp */; };
 		65A5362E19ED63990082DFC0 /* EnumValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A5362A19ED63990082DFC0 /* EnumValue.cpp */; };
 		65A5362F19ED63990082DFC0 /* TestSTDC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A5362C19ED63990082DFC0 /* TestSTDC.cpp */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		659325AF19EE455E00F6E6F2 /* testUsingConstructor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testUsingConstructor.cpp; sourceTree = "<group>"; };
+		659325B019EE455E00F6E6F2 /* testUsingConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testUsingConstructor.h; sourceTree = "<group>"; };
 		65A5362019ED62F80082DFC0 /* InsideCpp11_code */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InsideCpp11_code; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A5362319ED62F80082DFC0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		65A5362A19ED63990082DFC0 /* EnumValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnumValue.cpp; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 		65A5362219ED62F80082DFC0 /* InsideCpp11_code */ = {
 			isa = PBXGroup;
 			children = (
+				659325AF19EE455E00F6E6F2 /* testUsingConstructor.cpp */,
+				659325B019EE455E00F6E6F2 /* testUsingConstructor.h */,
 				65A5362A19ED63990082DFC0 /* EnumValue.cpp */,
 				65A5362B19ED63990082DFC0 /* EnumValue.h */,
 				65A5362C19ED63990082DFC0 /* TestSTDC.cpp */,
@@ -129,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65A5362F19ED63990082DFC0 /* TestSTDC.cpp in Sources */,
+				659325B119EE455E00F6E6F2 /* testUsingConstructor.cpp in Sources */,
 				65A5362E19ED63990082DFC0 /* EnumValue.cpp in Sources */,
 				65A5362419ED62F80082DFC0 /* main.cpp in Sources */,
 			);
@@ -244,6 +250,7 @@
 				65A5362919ED62F80082DFC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

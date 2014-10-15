@@ -8,10 +8,12 @@
 
 #include "EnumValue.h"
 #include "TestSTDC.h"
+#include "testUsingConstructor.h"
 
 int main(int argc, const char * argv[]) {
     TestEnumValue();
     TestSTDC_version();
+    testUsingConstructor();
     
     return 0;
 }
