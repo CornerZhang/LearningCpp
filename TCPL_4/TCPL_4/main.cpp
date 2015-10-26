@@ -10,8 +10,22 @@
 
 using size_tl = unsigned int;
 
+void* gPtr = nullptr;
+
+template <typename T>
+struct DefineType {
+    T value;
+    
+public:
+    void Func();
+};
+
 int main(int argc, const char * argv[]) {
     auto value = 0;
+    
+    char* string = "dfasfasfasdfsadf";
+    
+    int ast = 2232141243;
     
     return 0;
 }
