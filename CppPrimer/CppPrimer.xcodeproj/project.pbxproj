@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0DD3E71BEB1374006BE6C7 /* chap_10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0DD3E51BEB1374006BE6C7 /* chap_10.cpp */; };
+		0A0DD3EA1BEB18A1006BE6C7 /* chap_11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0DD3E81BEB18A1006BE6C7 /* chap_11.cpp */; };
 		0A3550011BDE2EF2001E6604 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A3550001BDE2EF2001E6604 /* main.cpp */; };
+		0AA20F981BE8406C00EFF041 /* chap_06.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AA20F961BE8406C00EFF041 /* chap_06.cpp */; };
+		0AB471641BE354FB00487179 /* chap_02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AB471621BE354FB00487179 /* chap_02.cpp */; };
+		0AB471671BE3696500487179 /* chap_03.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AB471651BE3696500487179 /* chap_03.cpp */; };
+		0AC851711BF04D4A00E48A0D /* chap_19.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8516F1BF04D4A00E48A0D /* chap_19.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +29,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A0DD3E51BEB1374006BE6C7 /* chap_10.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chap_10.cpp; sourceTree = "<group>"; };
+		0A0DD3E61BEB1374006BE6C7 /* chap_10.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chap_10.hpp; sourceTree = "<group>"; };
+		0A0DD3E81BEB18A1006BE6C7 /* chap_11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chap_11.cpp; sourceTree = "<group>"; };
+		0A0DD3E91BEB18A1006BE6C7 /* chap_11.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chap_11.hpp; sourceTree = "<group>"; };
 		0A354FFD1BDE2EF2001E6604 /* CppPrimer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppPrimer; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3550001BDE2EF2001E6604 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0AA20F961BE8406C00EFF041 /* chap_06.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chap_06.cpp; sourceTree = "<group>"; };
+		0AA20F971BE8406C00EFF041 /* chap_06.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chap_06.hpp; sourceTree = "<group>"; };
+		0AB471621BE354FB00487179 /* chap_02.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chap_02.cpp; sourceTree = "<group>"; };
+		0AB471631BE354FB00487179 /* chap_02.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chap_02.hpp; sourceTree = "<group>"; };
+		0AB471651BE3696500487179 /* chap_03.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chap_03.cpp; sourceTree = "<group>"; };
+		0AB471661BE3696500487179 /* chap_03.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chap_03.hpp; sourceTree = "<group>"; };
+		0AC8516F1BF04D4A00E48A0D /* chap_19.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chap_19.cpp; sourceTree = "<group>"; };
+		0AC851701BF04D4A00E48A0D /* chap_19.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chap_19.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,18 @@
 			isa = PBXGroup;
 			children = (
 				0A3550001BDE2EF2001E6604 /* main.cpp */,
+				0AB471621BE354FB00487179 /* chap_02.cpp */,
+				0AB471631BE354FB00487179 /* chap_02.hpp */,
+				0AB471651BE3696500487179 /* chap_03.cpp */,
+				0AB471661BE3696500487179 /* chap_03.hpp */,
+				0AA20F961BE8406C00EFF041 /* chap_06.cpp */,
+				0AA20F971BE8406C00EFF041 /* chap_06.hpp */,
+				0A0DD3E51BEB1374006BE6C7 /* chap_10.cpp */,
+				0A0DD3E61BEB1374006BE6C7 /* chap_10.hpp */,
+				0A0DD3E81BEB18A1006BE6C7 /* chap_11.cpp */,
+				0A0DD3E91BEB18A1006BE6C7 /* chap_11.hpp */,
+				0AC8516F1BF04D4A00E48A0D /* chap_19.cpp */,
+				0AC851701BF04D4A00E48A0D /* chap_19.hpp */,
 			);
 			path = CppPrimer;
 			sourceTree = "<group>";
@@ -118,7 +148,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB471671BE3696500487179 /* chap_03.cpp in Sources */,
+				0AA20F981BE8406C00EFF041 /* chap_06.cpp in Sources */,
+				0A0DD3E71BEB1374006BE6C7 /* chap_10.cpp in Sources */,
+				0AC851711BF04D4A00E48A0D /* chap_19.cpp in Sources */,
+				0A0DD3EA1BEB18A1006BE6C7 /* chap_11.cpp in Sources */,
 				0A3550011BDE2EF2001E6604 /* main.cpp in Sources */,
+				0AB471641BE354FB00487179 /* chap_02.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +197,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(COCOS_SDK_ROOT)";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -198,6 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(COCOS_SDK_ROOT)";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -207,6 +245,7 @@
 		0A3550051BDE2EF2001E6604 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -214,6 +253,7 @@
 		0A3550061BDE2EF2001E6604 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -237,6 +277,7 @@
 				0A3550061BDE2EF2001E6604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

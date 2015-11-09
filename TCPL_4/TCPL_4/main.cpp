@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include "chap_35.hpp"
 
 using size_tl = unsigned int;
 
@@ -26,6 +27,8 @@ int main(int argc, const char * argv[]) {
     char* string = "dfasfasfasdfsadf";
     
     int ast = 2232141243;
+
+    Test_35();
     
     return 0;
 }

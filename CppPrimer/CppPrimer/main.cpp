@@ -7,16 +7,15 @@
 //
 
 #include <iostream>
-
-template<typename Type>
-struct vector {
-    Type x;
-    Type y;
-    Type z;
-};
+#include "chap_02.hpp"
+#include "chap_03.hpp"
+#include <chap_19.hpp>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    Test_chap_02();
+    Test_chap_03();
+    
+    Test_19();
+    
     return 0;
 }
