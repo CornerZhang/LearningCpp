@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AC851741BF0538700E48A0D /* TestUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC851721BF0538700E48A0D /* TestUnion.cpp */; };
 		659325B119EE455E00F6E6F2 /* testUsingConstructor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 659325AF19EE455E00F6E6F2 /* testUsingConstructor.cpp */; };
 		65A5362419ED62F80082DFC0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A5362319ED62F80082DFC0 /* main.cpp */; };
 		65A5362E19ED63990082DFC0 /* EnumValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A5362A19ED63990082DFC0 /* EnumValue.cpp */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0AC851721BF0538700E48A0D /* TestUnion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestUnion.cpp; sourceTree = "<group>"; };
+		0AC851731BF0538700E48A0D /* TestUnion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TestUnion.hpp; sourceTree = "<group>"; };
 		659325AF19EE455E00F6E6F2 /* testUsingConstructor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testUsingConstructor.cpp; sourceTree = "<group>"; };
 		659325B019EE455E00F6E6F2 /* testUsingConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testUsingConstructor.h; sourceTree = "<group>"; };
 		65A5362019ED62F80082DFC0 /* InsideCpp11_code */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InsideCpp11_code; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +76,8 @@
 				65A5362C19ED63990082DFC0 /* TestSTDC.cpp */,
 				65A5362D19ED63990082DFC0 /* TestSTDC.h */,
 				65A5362319ED62F80082DFC0 /* main.cpp */,
+				0AC851721BF0538700E48A0D /* TestUnion.cpp */,
+				0AC851731BF0538700E48A0D /* TestUnion.hpp */,
 			);
 			path = InsideCpp11_code;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 			files = (
 				65A5362F19ED63990082DFC0 /* TestSTDC.cpp in Sources */,
 				659325B119EE455E00F6E6F2 /* testUsingConstructor.cpp in Sources */,
+				0AC851741BF0538700E48A0D /* TestUnion.cpp in Sources */,
 				65A5362E19ED63990082DFC0 /* EnumValue.cpp in Sources */,
 				65A5362419ED62F80082DFC0 /* main.cpp in Sources */,
 			);
