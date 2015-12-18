@@ -12,10 +12,13 @@
 #include <iomanip>
 #include <locale>
 #include <codecvt>
-#include "constliteral.h"
-#include "stringext.h"
+#include <memory>
+#include <scoped_allocator>
+#include <vector>
+#include "cstrfunc.h"
 #include "cmd_arg.h"
 #include "MultiMethods_Test.h"
+#include "allocator_def.h"
 
 namespace {
     template <typename Type>
@@ -48,10 +51,61 @@ namespace {
     }
 }
 
+class Base {
+public:
+    Base(int a) {
+        
+        
+    }
+    
+    Base(int a, int b) {
+        
+    }
+    
+    void foo() {}
+    void foo(int a) {}
+};
+
+class Extent: private Base {
+public:
+    using Base::Base;
+    using Base::foo;
+    
+    explicit Extent(int a) : Base(a) {
+        
+    }
+    
+    void func() {
+        foo();
+    }
+};
+
+template <typename T>
+class vector_ex: private std::vector<T> {
+public:
+    using std::vector<T>::vector;
+    
+    T* alloc_to_back() {
+        return nullptr;
+    }
+};
 
 void char_test() {
-    inf::const_literal<char>::empty;
+    std::allocator_traits<inf::allocator<char>>::allocator_type a;
     
+    std::scoped_allocator_adaptor<inf::allocator<char>>::value_type sa;
+    
+    std::wstring asdad( wt("dafads") );
+    asdad += wt("dfaf");
+    
+    std::wstring ostr;
+    inf::cstr_substrn(ostr, asdad.c_str(), asdad.size(), 1, 3);
+
+    Extent et(45);
+    et.foo();
+    
+    vector_ex<int> vit(34, 8);
+
     // utf-8
     char u_c = u8c('C');
     char u8_array[] = u8s("中");
@@ -60,7 +114,15 @@ void char_test() {
     bool bst = u8_str != absc;
     absc += u8_str;
     
-    inf::length(u8_array);
+    std::basic_string<char, std::char_traits<char>, inf::allocator<char>> sssss;
+    sssss = "dafdsaf";
+    
+    bool vb = std::uses_allocator<char, inf::allocator<char>>::value;
+    
+    inf::cstr_length(u8_array);
+    
+    const char* dis = "324352346";
+    int rds = std::isdigit(*dis);
     
     // utf-16
     char16_t u16_array[] = ut("中");
