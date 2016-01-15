@@ -8,6 +8,13 @@
 
 #include "chap_10.hpp"
 
+struct Object {
+    
+    //static auto lambda = [this]()->int { return 0; };
+private:
+    int a, b;
+};
+
 void Test_10() {
     int var = 10;
     float fs = 34.0f;
@@ -19,4 +26,11 @@ void Test_10() {
     auto xt = [=, &fs]()->float { return fs * var; };
 
     int r = f(34);
+    g();
+    r = z();
+    float fr = xg();
+    fr = xt();
+    
+    Object object;
+    
 }
