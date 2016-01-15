@@ -1,32 +1,31 @@
-//
-//  NetEventCenter.hpp
-//  concurrency_in_action
-//
-//  Created by huazhang on 1/15/16.
-//  Copyright © 2016 huazhang. All rights reserved.
-//
-
-#ifndef NetEventCenter_hpp
-#define NetEventCenter_hpp
+#ifndef NetSessionCenter_hpp
+#define NetSessionCenter_hpp
 
 #include <thread>
+#include <vector>
+#include <array>
 
-enum class session_state {
-    be_request,
-    be_responsed
-};
-
-class net_session {
-    friend class net_session_center;
-public:
-    session_state get_state() const;
+struct net_session {
+    enum class state {
+        be_request, // default
+        be_responsed
+    };
     
-    void        set_send_data( const char* data );
-    const char* get_receive() const;
+    state       get_state() const;
+    
+    const std::vector<char>& get_receive() const;
 protected:
-    session_state state;
-    const char* send_data;
-    const char* receive_data;
+    friend class net_session_center;
+
+    net_session();
+    
+    void send();
+    
+    state               state_value;
+    const char*         send_data;
+    std::vector<char>   receive_data;
+    bool                be_used;
+    // mutex
 };
 
 class net_session_center {
@@ -35,18 +34,25 @@ public:
     void shutdown();
     
     
-    net_session* create_session();
+    const net_session* build_session(const char* send_data);  // the new session state as default ( be_request )
     
     static net_session_center* _PrivateInstall();
 protected:
     net_session_center();
 
-    static void go();
+    void    go();
 
+    static constexpr unsigned int max_sessions_number = 16;
+    using sessions_lock = std::lock_guard<std::mutex>;
+    using session_seq = std::array<net_session, max_sessions_number>;
+    
+    session_seq sessions;
+    
     bool        be_run;
     std::thread go_thread;
+    std::mutex  go_m;
 };
 
 extern net_session_center* ne_center;
 
-#endif /* NetEventCenter_hpp */
+#endif /* NetSessionCenter_hpp */

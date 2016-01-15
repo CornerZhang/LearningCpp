@@ -28,3 +28,8 @@
 *.app
 
 DemoCpp/Build
+*.dia
+
+*.hmap
+
+*.dia

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0A180C191C47AADA00CBD835 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A180C181C47AADA00CBD835 /* main.cpp */; };
+		0A180C211C47ABE700CBD835 /* chap_01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A180C1F1C47ABE700CBD835 /* chap_01.cpp */; };
+		0A180C241C47B12F00CBD835 /* chap_02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A180C221C47B12F00CBD835 /* chap_02.cpp */; };
+		0A76E97C1C489EF8004D5360 /* chap_03.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A76E97A1C489EF8004D5360 /* chap_03.cpp */; };
+		0A76E9831C48C74D004D5360 /* NetSessionCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A76E9811C48C74D004D5360 /* NetSessionCenter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		0A180C151C47AADA00CBD835 /* concurrency_in_action */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = concurrency_in_action; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A180C181C47AADA00CBD835 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0A180C1F1C47ABE700CBD835 /* chap_01.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chap_01.cpp; sourceTree = "<group>"; };
+		0A180C201C47ABE700CBD835 /* chap_01.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chap_01.hpp; sourceTree = "<group>"; };
+		0A180C221C47B12F00CBD835 /* chap_02.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chap_02.cpp; sourceTree = "<group>"; };
+		0A180C231C47B12F00CBD835 /* chap_02.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chap_02.hpp; sourceTree = "<group>"; };
+		0A76E97A1C489EF8004D5360 /* chap_03.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chap_03.cpp; sourceTree = "<group>"; };
+		0A76E97B1C489EF8004D5360 /* chap_03.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chap_03.hpp; sourceTree = "<group>"; };
+		0A76E9811C48C74D004D5360 /* NetSessionCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetSessionCenter.cpp; sourceTree = "<group>"; };
+		0A76E9821C48C74D004D5360 /* NetSessionCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetSessionCenter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				0A180C181C47AADA00CBD835 /* main.cpp */,
+				0A180C1F1C47ABE700CBD835 /* chap_01.cpp */,
+				0A180C201C47ABE700CBD835 /* chap_01.hpp */,
+				0A180C221C47B12F00CBD835 /* chap_02.cpp */,
+				0A180C231C47B12F00CBD835 /* chap_02.hpp */,
+				0A76E97A1C489EF8004D5360 /* chap_03.cpp */,
+				0A76E97B1C489EF8004D5360 /* chap_03.hpp */,
+				0A76E9811C48C74D004D5360 /* NetSessionCenter.cpp */,
+				0A76E9821C48C74D004D5360 /* NetSessionCenter.h */,
 			);
 			path = concurrency_in_action;
 			sourceTree = "<group>";
@@ -118,6 +138,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A180C241C47B12F00CBD835 /* chap_02.cpp in Sources */,
+				0A180C211C47ABE700CBD835 /* chap_01.cpp in Sources */,
+				0A76E9831C48C74D004D5360 /* NetSessionCenter.cpp in Sources */,
+				0A76E97C1C489EF8004D5360 /* chap_03.cpp in Sources */,
 				0A180C191C47AADA00CBD835 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,7 +153,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -147,7 +171,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -172,7 +196,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -190,7 +214,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -237,6 +261,7 @@
 				0A180C1E1C47AADA00CBD835 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

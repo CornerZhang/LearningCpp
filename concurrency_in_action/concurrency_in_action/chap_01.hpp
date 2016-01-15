@@ -9,6 +9,6 @@
 #ifndef chap_01_hpp
 #define chap_01_hpp
 
-#include <stdio.h>
+void test_chap01();
 
 #endif /* chap_01_hpp */
