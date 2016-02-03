@@ -598,6 +598,12 @@ namespace inf {
     std::size_t cstr_find_first_char( const char_type *str, const char_type c, int start = 0, int end = INVALID_POSITION) {
         std::size_t i;
         
+        assert(str);
+        
+        if (*str==c_def<char_type>::zero) {
+            return INVALID_POSITION;
+        }
+        
         if ( end == INVALID_POSITION ) {
             end = cstr_length( str ) - 1;
         }
@@ -900,6 +906,37 @@ namespace inf {
         
         outstr.append( &str[ substr_start ], substr_len );
         return outstr.c_str();
+    }
+    
+    template <typename char_type>
+    std::size_t cstr_split(const char_type* splited_str_pointers[], const char_type* str, std::size_t str_len, char_type split_char) {
+        const char_type* str_end = str + str_len;
+        std::size_t substr_count=0;
+        std::size_t found_pos=0;
+        
+        assert(str);
+        
+        // checking
+        if (*str==c_def<char_type>::zero || split_char==c_def<char_type>::zero)
+            return substr_count;
+        
+        do {
+            if(*str==split_char)
+                ++str;
+            
+            splited_str_pointers[substr_count] = str;
+            ++substr_count;
+            
+            found_pos = cstr_find_first_char(str, split_char);
+            if (found_pos==INVALID_POSITION) {
+                break;
+            }
+
+            str += found_pos+1;  // skip split_char
+
+        } while ( str <= str_end );
+                
+        return substr_count;
     }
 }   // ::inf
 

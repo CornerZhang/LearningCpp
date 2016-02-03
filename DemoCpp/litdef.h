@@ -58,6 +58,47 @@ namespace inf {
         static const char z = 'z';
     };
     template<>
+    struct c_def<wchar_t> {
+        static const wchar_t zero = wt('\0');
+        static const wchar_t back_slash = wt('\\');
+        static const wchar_t slash = wt('/');
+        static const wchar_t quote = wt('\"');
+        static const wchar_t single_quote = wt('\'');
+        static const wchar_t white_space = wt(' ');
+        static const wchar_t dot = wt('.');
+        static const wchar_t add = wt('+');
+        static const wchar_t sub = wt('-');
+        static const wchar_t formfeed = wt('\f');
+        static const wchar_t newline = wt('\n');
+        static const wchar_t return_c = wt('\r');
+        static const wchar_t table = wt('\t');
+        static const wchar_t vertical_table = wt('\v');
+        static const wchar_t question = wt('?');
+        static const wchar_t star = wt('*');
+        static const wchar_t open_quad = wt('[');
+        static const wchar_t close_quad = wt(']');
+        static const wchar_t comma = wt(',');
+        
+        static const wchar_t _0 = wt('0');
+        static const wchar_t _1 = wt('1');
+        static const wchar_t _2 = wt('2');
+        static const wchar_t _3 = wt('3');
+        static const wchar_t _4 = wt('4');
+        static const wchar_t _5 = wt('5');
+        static const wchar_t _6 = wt('6');
+        static const wchar_t _7 = wt('7');
+        static const wchar_t _8 = wt('8');
+        static const wchar_t _9 = wt('9');
+        
+        static const wchar_t A = wt('A');
+        static const wchar_t F = wt('F');
+        static const wchar_t Z = wt('Z');
+        
+        static const wchar_t a = wt('a');
+        static const wchar_t f = wt('f');
+        static const wchar_t z = wt('z');
+    };
+    template<>
     struct c_def<char16_t> {
         static const char16_t zero = u16t('\0');
         static const char16_t back_slash = u16t('\\');
@@ -164,6 +205,26 @@ namespace inf {
     const char* cstr_def<char>::fmt_uint = u8s("%u");
     const char* cstr_def<char>::fmt_float = u8s("%f");
     const char* cstr_def<char>::fmt_double = u8s("%.16f");
+    
+    template <>
+    struct cstr_def<wchar_t> {
+        static const wchar_t* empty;
+        
+        static const wchar_t* bool_false;
+        static const wchar_t* bool_true;
+        
+        static const wchar_t* fmt_int;
+        static const wchar_t* fmt_uint;
+        static const wchar_t* fmt_float;
+        static const wchar_t* fmt_double;
+    };
+    const wchar_t* cstr_def<wchar_t>::empty = wt("");
+    const wchar_t* cstr_def<wchar_t>::bool_false = wt("false");
+    const wchar_t* cstr_def<wchar_t>::bool_true = wt("true");
+    const wchar_t* cstr_def<wchar_t>::fmt_int = wt("%d");
+    const wchar_t* cstr_def<wchar_t>::fmt_uint = wt("%u");
+    const wchar_t* cstr_def<wchar_t>::fmt_float = wt("%f");
+    const wchar_t* cstr_def<wchar_t>::fmt_double = wt("%.16f");
     
     template <>
     struct cstr_def<char16_t> {

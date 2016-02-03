@@ -101,6 +101,12 @@ void char_test() {
     std::wstring ostr;
     inf::cstr_substrn(ostr, asdad.c_str(), asdad.size(), 1, 3);
 
+    const wchar_t* as = L"d";
+    
+    std::wstring text1(wt("abcd/34452/ghnhgh/"));
+    const wchar_t* str_ptrs[20];
+    std::size_t strn = inf::cstr_split(str_ptrs, text1.c_str(), text1.length(), wt('/'));
+    
     Extent et(45);
     et.foo();
     
@@ -142,6 +148,20 @@ void char_test() {
     print_code_unit_sequence(u32_str);
     std::cout << std::endl;
 
+    {
+        std::string u8_source_str = u8"\xF0\x9F\x98\xBB"; // utf-8
+        
+        std::wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t> cvt;
+        std::u16string u16_cvt_str = cvt.from_bytes(u8_source_str); // utf-8 to utf-16
+        
+        std::wstring_convert<std::codecvt_utf8<char16_t>, char16_t> utf8_ucs2_cvt;
+        std::u16string ucs2_cvt_str = utf8_ucs2_cvt.from_bytes(u8_source_str); // utf-8 to ucs2
+
+        std::wstring_convert<std::codecvt_utf8<char32_t>, char32_t> utf8_ucs4_cvt;
+        std::u32string ucs4_cvt_str = utf8_ucs4_cvt.from_bytes(u8_source_str); // utf-8 to ucs4
+
+    }
+    
     {
         // UTF-8到UTF-16和UTF-16到UTF-8的编码转换
         std::string u8_source_str = u8"破晓的博客"; // utf-8
