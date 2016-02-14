@@ -1,5 +1,5 @@
-#ifndef CONSTLITERAL_H
-#define CONSTLITERAL_H
+#ifndef _LITDEF_H_
+#define _LITDEF_H_
 
 // macro defines
 #define u8s(s) (u8##s)
@@ -265,4 +265,4 @@ namespace inf {
     const char32_t* cstr_def<char32_t>::fmt_double = u32t("%.16f");
 }   // end of ::inf
 
-#endif /* CONSTLITERAL_H */
+#endif /* _LITDEF_H_ */

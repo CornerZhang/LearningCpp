@@ -1,5 +1,5 @@
-#ifndef strext_h
-#define strext_h
+#ifndef _CSTRFUNC_H_
+#define _CSTRFUNC_H_
 
 #include "litdef.h"
 #include <cstddef>
@@ -940,4 +940,4 @@ namespace inf {
     }
 }   // ::inf
 
-#endif /* strext_h */
+#endif /* _CSTRFUNC_H_ */

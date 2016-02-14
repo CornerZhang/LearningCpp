@@ -1,10 +1,3 @@
-//
-//  MultiMethods.h
-//
-//  Created by huazhang on 12/14/15.
-//  Copyright © 2015 huazhang. All rights reserved.
-//
-
 #ifndef MultiMethods_h
 #define MultiMethods_h
 

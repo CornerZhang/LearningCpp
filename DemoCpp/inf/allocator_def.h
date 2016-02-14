@@ -1,13 +1,5 @@
-//
-//  allocut.h
-//  DemoCpp
-//
-//  Created by huazhang on 12/17/15.
-//  Copyright © 2015 huazhang. All rights reserved.
-//
-
-#ifndef allocut_h
-#define allocut_h
+#ifndef _ALLOCATOR_DEF_H_
+#define _ALLOCATOR_DEF_H_
 
 namespace inf {
     // C++ 11, need Heap class be implemented
@@ -91,4 +83,4 @@ namespace inf {
     }
 }   // ::inf
 
-#endif /* allocut_h */
+#endif /* _ALLOCATOR_DEF_H_ */

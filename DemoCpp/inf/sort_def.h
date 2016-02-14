@@ -1,5 +1,5 @@
-#ifndef __SORT_ALGO_H__
-#define __SORT_ALGO_H__
+#ifndef __SORT_DEF_H__
+#define __SORT_DEF_H__
 
 
 namespace inf {
@@ -492,4 +492,4 @@ recurse:
 
 }   // ::inf
 
-#endif // ! __SORT_ALGO_H__
+#endif // ! __SORT_DEF_H__
