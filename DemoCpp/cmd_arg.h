@@ -15,7 +15,7 @@ namespace inf {
         cmd_arg() = default;
         
         void initialize(int argc, char* argv[]);
-        void initialize(const wchar_t* cmd_line_str, int count);
+        void initialize(const wchar_t* cmd_line_str, int count);    // for windows
         
         int         count() const;
         const char* get_arg(int index) const;

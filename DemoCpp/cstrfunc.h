@@ -816,11 +816,11 @@ namespace inf {
     template <typename char_type>
     void cstr_copynz(char_type* dest, const char_type* src, int count) {
         if ( !src ) {
-            assert( false && "Str::copynz: NULL src" );
+            assert( false && "cstr_copynz: NULL src" );
             return;
         }
         if ( count < 1 ) {
-            assert( false && "Str::copynz: destsize < 1" );
+            assert( false && "cstr_copynz: destsize < 1" );
             return;
         }
         
@@ -834,7 +834,7 @@ namespace inf {
         
         dest_realsize = cstr_length( dest_buf );
         if ( dest_realsize >= dest_size ) {
-            assert( false && "Str::append: already overflowed" );
+            assert( false && "cstr_append: already overflowed" );
         }
         cstr_copynz( dest_buf + dest_realsize, src, dest_size - dest_realsize );
     }

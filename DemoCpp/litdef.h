@@ -181,8 +181,6 @@ namespace inf {
         static const char32_t z = u32t('z');
     };
     
-    
-    
     template <typename char_type>
     struct cstr_def;
     
