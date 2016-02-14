@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		0A0373C31BFC22DB008CF9B6 /* SubSystem_A.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0373C11BFC22DB008CF9B6 /* SubSystem_A.cpp */; };
 		0A0373C61BFC22ED008CF9B6 /* SubSystem_B.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0373C41BFC22ED008CF9B6 /* SubSystem_B.cpp */; };
-		0A4AB5A21C0555110044C849 /* cmd_arg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A4AB5A11C0555110044C849 /* cmd_arg.cpp */; };
-		0AB138D51C215A57008925E4 /* endian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AB138D31C215A57008925E4 /* endian.cpp */; };
+		0A44B50B1C7035B700D11733 /* cmd_arg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A44B5011C7035B700D11733 /* cmd_arg.cpp */; };
+		0A44B50C1C7035B700D11733 /* endian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A44B5051C7035B700D11733 /* endian.cpp */; };
 		0AC681431C1EBEBA0074C499 /* MultiMethods_Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC681421C1EBEBA0074C499 /* MultiMethods_Test.cpp */; };
 		0AC8518B1BF0990600E48A0D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8518A1BF0990600E48A0D /* main.cpp */; };
 /* End PBXBuildFile section */
@@ -33,19 +33,19 @@
 		0A0373C21BFC22DB008CF9B6 /* SubSystem_A.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SubSystem_A.hpp; sourceTree = SOURCE_ROOT; };
 		0A0373C41BFC22ED008CF9B6 /* SubSystem_B.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SubSystem_B.cpp; sourceTree = SOURCE_ROOT; };
 		0A0373C51BFC22ED008CF9B6 /* SubSystem_B.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SubSystem_B.hpp; sourceTree = SOURCE_ROOT; };
-		0A4AB5A11C0555110044C849 /* cmd_arg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cmd_arg.cpp; sourceTree = SOURCE_ROOT; };
-		0A4AB5A31C05557F0044C849 /* cmd_arg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmd_arg.h; sourceTree = SOURCE_ROOT; };
-		0AB138D11C213665008925E4 /* litdef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = litdef.h; sourceTree = SOURCE_ROOT; };
-		0AB138D21C213ABE008925E4 /* cstrfunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cstrfunc.h; sourceTree = SOURCE_ROOT; };
-		0AB138D31C215A57008925E4 /* endian.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = endian.cpp; sourceTree = SOURCE_ROOT; };
-		0AB138D41C215A57008925E4 /* endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endian.h; sourceTree = SOURCE_ROOT; };
-		0AB138D61C215CB7008925E4 /* finders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = finders.h; sourceTree = SOURCE_ROOT; };
-		0AB138D71C215CB7008925E4 /* binsearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = binsearch.h; sourceTree = SOURCE_ROOT; };
-		0AB138D81C215CB7008925E4 /* sort_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sort_def.h; sourceTree = SOURCE_ROOT; };
-		0AB138DA1C216139008925E4 /* delcontainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = delcontainer.h; sourceTree = "<group>"; };
-		0ABAD15F1C22909B00281296 /* allocator_def.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = allocator_def.h; sourceTree = "<group>"; };
+		0A44B4FF1C7035B700D11733 /* allocator_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = allocator_def.h; path = inf/allocator_def.h; sourceTree = "<group>"; };
+		0A44B5001C7035B700D11733 /* binsearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = binsearch.h; path = inf/binsearch.h; sourceTree = "<group>"; };
+		0A44B5011C7035B700D11733 /* cmd_arg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cmd_arg.cpp; path = inf/cmd_arg.cpp; sourceTree = "<group>"; };
+		0A44B5021C7035B700D11733 /* cmd_arg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cmd_arg.h; path = inf/cmd_arg.h; sourceTree = "<group>"; };
+		0A44B5031C7035B700D11733 /* cstrfunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cstrfunc.h; path = inf/cstrfunc.h; sourceTree = "<group>"; };
+		0A44B5041C7035B700D11733 /* delcontainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = delcontainer.h; path = inf/delcontainer.h; sourceTree = "<group>"; };
+		0A44B5051C7035B700D11733 /* endian.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = endian.cpp; path = inf/endian.cpp; sourceTree = "<group>"; };
+		0A44B5061C7035B700D11733 /* endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = endian.h; path = inf/endian.h; sourceTree = "<group>"; };
+		0A44B5071C7035B700D11733 /* finders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = finders.h; path = inf/finders.h; sourceTree = "<group>"; };
+		0A44B5081C7035B700D11733 /* litdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = litdef.h; path = inf/litdef.h; sourceTree = "<group>"; };
+		0A44B5091C7035B700D11733 /* multimethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = multimethods.h; path = inf/multimethods.h; sourceTree = "<group>"; };
+		0A44B50A1C7035B700D11733 /* sort_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sort_def.h; path = inf/sort_def.h; sourceTree = "<group>"; };
 		0AC681421C1EBEBA0074C499 /* MultiMethods_Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiMethods_Test.cpp; sourceTree = SOURCE_ROOT; };
-		0AC681441C1EBF650074C499 /* multimethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = multimethods.h; sourceTree = SOURCE_ROOT; };
 		0AC681451C1EC00C0074C499 /* MultiMethods_Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiMethods_Test.h; sourceTree = SOURCE_ROOT; };
 		0AC851801BF098AF00E48A0D /* DemoCpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DemoCpp; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC8518A1BF0990600E48A0D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
@@ -65,18 +65,18 @@
 		0AB138D91C215FEB008925E4 /* inf */ = {
 			isa = PBXGroup;
 			children = (
-				0A4AB5A31C05557F0044C849 /* cmd_arg.h */,
-				0A4AB5A11C0555110044C849 /* cmd_arg.cpp */,
-				0AB138D11C213665008925E4 /* litdef.h */,
-				0AB138D21C213ABE008925E4 /* cstrfunc.h */,
-				0AB138DA1C216139008925E4 /* delcontainer.h */,
-				0AB138D61C215CB7008925E4 /* finders.h */,
-				0AB138D71C215CB7008925E4 /* binsearch.h */,
-				0AB138D81C215CB7008925E4 /* sort_def.h */,
-				0AB138D31C215A57008925E4 /* endian.cpp */,
-				0AB138D41C215A57008925E4 /* endian.h */,
-				0AC681441C1EBF650074C499 /* multimethods.h */,
-				0ABAD15F1C22909B00281296 /* allocator_def.h */,
+				0A44B4FF1C7035B700D11733 /* allocator_def.h */,
+				0A44B5001C7035B700D11733 /* binsearch.h */,
+				0A44B5011C7035B700D11733 /* cmd_arg.cpp */,
+				0A44B5021C7035B700D11733 /* cmd_arg.h */,
+				0A44B5031C7035B700D11733 /* cstrfunc.h */,
+				0A44B5041C7035B700D11733 /* delcontainer.h */,
+				0A44B5051C7035B700D11733 /* endian.cpp */,
+				0A44B5061C7035B700D11733 /* endian.h */,
+				0A44B5071C7035B700D11733 /* finders.h */,
+				0A44B5081C7035B700D11733 /* litdef.h */,
+				0A44B5091C7035B700D11733 /* multimethods.h */,
+				0A44B50A1C7035B700D11733 /* sort_def.h */,
 			);
 			name = inf;
 			sourceTree = "<group>";
@@ -169,10 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AB138D51C215A57008925E4 /* endian.cpp in Sources */,
+				0A44B50C1C7035B700D11733 /* endian.cpp in Sources */,
 				0AC681431C1EBEBA0074C499 /* MultiMethods_Test.cpp in Sources */,
+				0A44B50B1C7035B700D11733 /* cmd_arg.cpp in Sources */,
 				0AC8518B1BF0990600E48A0D /* main.cpp in Sources */,
-				0A4AB5A21C0555110044C849 /* cmd_arg.cpp in Sources */,
 				0A0373C61BFC22ED008CF9B6 /* SubSystem_B.cpp in Sources */,
 				0A0373C31BFC22DB008CF9B6 /* SubSystem_A.cpp in Sources */,
 			);
@@ -217,6 +217,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/inf/";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -254,6 +255,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/inf/";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;

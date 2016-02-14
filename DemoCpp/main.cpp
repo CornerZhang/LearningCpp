@@ -15,10 +15,10 @@
 #include <memory>
 #include <scoped_allocator>
 #include <vector>
-#include "cstrfunc.h"
-#include "cmd_arg.h"
+#include <cstrfunc.h>
+#include <cmd_arg.h>
+#include <allocator_def.h>
 #include "MultiMethods_Test.h"
-#include "allocator_def.h"
 
 namespace {
     template <typename Type>
@@ -101,6 +101,11 @@ void char_test() {
     std::wstring ostr;
     inf::cstr_substrn(ostr, asdad.c_str(), asdad.size(), 1, 3);
 
+    char str_base[512] = {0};
+    inf::cstr_append(str_base, 512, "ftp://123.150.12.122/");
+    inf::cstr_append(str_base, 512, "dfafasf_");
+    inf::cstr_append(str_base, 512, "313423.png");
+    
     const wchar_t* as = L"d";
     
     std::wstring text1(wt("abcd/34452/ghnhgh/"));
