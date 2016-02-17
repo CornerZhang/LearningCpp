@@ -12,6 +12,7 @@
 		0A180C241C47B12F00CBD835 /* chap_02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A180C221C47B12F00CBD835 /* chap_02.cpp */; };
 		0A76E97C1C489EF8004D5360 /* chap_03.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A76E97A1C489EF8004D5360 /* chap_03.cpp */; };
 		0A76E9831C48C74D004D5360 /* NetSessionCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A76E9811C48C74D004D5360 /* NetSessionCenter.cpp */; };
+		0A8528231C72CD7B00F17364 /* async_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8528211C72CD7B00F17364 /* async_queue.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		0A76E97B1C489EF8004D5360 /* chap_03.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chap_03.hpp; sourceTree = "<group>"; };
 		0A76E9811C48C74D004D5360 /* NetSessionCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetSessionCenter.cpp; sourceTree = "<group>"; };
 		0A76E9821C48C74D004D5360 /* NetSessionCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetSessionCenter.h; sourceTree = "<group>"; };
+		0A8528211C72CD7B00F17364 /* async_queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = async_queue.cpp; sourceTree = "<group>"; };
+		0A8528221C72CD7B00F17364 /* async_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = async_queue.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				0A76E97B1C489EF8004D5360 /* chap_03.hpp */,
 				0A76E9811C48C74D004D5360 /* NetSessionCenter.cpp */,
 				0A76E9821C48C74D004D5360 /* NetSessionCenter.h */,
+				0A8528211C72CD7B00F17364 /* async_queue.cpp */,
+				0A8528221C72CD7B00F17364 /* async_queue.h */,
 			);
 			path = concurrency_in_action;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				0A180C241C47B12F00CBD835 /* chap_02.cpp in Sources */,
 				0A180C211C47ABE700CBD835 /* chap_01.cpp in Sources */,
 				0A76E9831C48C74D004D5360 /* NetSessionCenter.cpp in Sources */,
+				0A8528231C72CD7B00F17364 /* async_queue.cpp in Sources */,
 				0A76E97C1C489EF8004D5360 /* chap_03.cpp in Sources */,
 				0A180C191C47AADA00CBD835 /* main.cpp in Sources */,
 			);

@@ -34,6 +34,7 @@ net_session_center* net_session_center::_PrivateInstall() {
     return &net_session_center_instance;
 }
 
+// ctor - default
 net_session_center::net_session_center() : be_run(true), go_thread( &net_session_center::go, this ), sessions( { net_session() } ) {
     go_thread.detach();
 }

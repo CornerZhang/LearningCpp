@@ -302,7 +302,10 @@ void char_test() {
 
 int main(int argc, char* argv[]) {
     using namespace std;
-
+    
+    wchar_t bool_buf[8] = {'c','c','c','c','c','c','c','c'};
+    std::size_t l = inf::cstr_from_bool(bool_buf, 8, false);
+    
     inf::cmd_arg cmdArgs;
     
     cmdArgs.initialize(argc, argv);

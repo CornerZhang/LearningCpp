@@ -468,7 +468,28 @@ namespace inf {
         
         return val * m;
     }
+
+    template <typename char_type>
+    void cstr_copynz(char_type* dest, const char_type* src, int count);
     
+    template<typename char_type>
+    std::size_t cstr_from_bool(char_type* cstr_dst, std::size_t cstr_dst_len, bool value) {
+        if ( !cstr_dst ) {
+            assert( false && "cstr_from_bool: NULL cstr_dst" );
+            return 0;
+        }
+        if ( cstr_dst_len < 1 ) {
+            assert( false && "cstr_from_bool: cstr_dst_len < 1" );
+            return 0;
+        }
+        
+        const char_type* const bool_label = value ? cstr_def<char_type>::bool_true : cstr_def<char_type>::bool_false;
+        const int real_len = value ? 4 : 5;
+
+        cstr_copynz(cstr_dst, bool_label, real_len+1);
+        return real_len;
+    }
+
     template<typename char_type>
     bool cstr_to_float_array( float *dstF, int floatNum, const char_type *srcText, const char_type splitChar = c_def<char_type>::comma) {
         unsigned long val;
