@@ -28,7 +28,7 @@ namespace aq {
             found->unused = false;
         }else{
             // create new to tail
-            function_ent_t fent = { f, nullptr, false };
+            function_ent_t fent = { f, context, false };
             queue.push_back(fent);
         }
     }

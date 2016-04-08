@@ -9,17 +9,26 @@
 #include "chap_35.hpp"
 #include <chrono>
 #include <iostream>
+#include <iomanip>
+#include <sstream>
 
 using namespace std::chrono;
 
 void Test_35() {
-    steady_clock::time_point t = steady_clock::now();
+    std::ostringstream sstream;
     
-    const int timeSecond = 4;
-    sleep(timeSecond);
+    auto now = std::chrono::system_clock::now();
+
+    auto p = duration_cast<milliseconds>( now.time_since_epoch() );
+    sstream << "milliseconds since epoch: (chrono) :"<< p.count() << '\n';
     
-    steady_clock::duration d = steady_clock::now() - t;
+    std::time_t now_c = std::chrono::system_clock::to_time_t(now);
+    sstream << "now, the time was "<< std::put_time(std::localtime(&now_c), "%F %T") << std::setfill('0') << std::setw(3)<< '\n';
     
-    long long unit = duration_cast<milliseconds>(d).count();
-    std::cout<<"something took "<<unit<<" ms"<<std::endl;
+    auto start = std::chrono::steady_clock::now();
+    sstream << "Hello World\n";
+    auto end = std::chrono::steady_clock::now();
+    sstream << "Printing took "<< std::chrono::duration_cast<std::chrono::microseconds>(end - start).count()<< "us.\n";
+    
+    std::cout<<sstream.str();
 }

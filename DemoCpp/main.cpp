@@ -19,6 +19,7 @@
 #include <cmd_arg.h>
 #include <allocator_def.h>
 #include "MultiMethods_Test.h"
+#include "CycleQueue.h"
 
 namespace {
     template <typename Type>
@@ -152,20 +153,6 @@ void char_test() {
     std::cout << "ucs4: ";
     print_code_unit_sequence(u32_str);
     std::cout << std::endl;
-
-    {
-        std::string u8_source_str = u8"\xF0\x9F\x98\xBB"; // utf-8
-        
-        std::wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t> cvt;
-        std::u16string u16_cvt_str = cvt.from_bytes(u8_source_str); // utf-8 to utf-16
-        
-        std::wstring_convert<std::codecvt_utf8<char16_t>, char16_t> utf8_ucs2_cvt;
-        std::u16string ucs2_cvt_str = utf8_ucs2_cvt.from_bytes(u8_source_str); // utf-8 to ucs2
-
-        std::wstring_convert<std::codecvt_utf8<char32_t>, char32_t> utf8_ucs4_cvt;
-        std::u32string ucs4_cvt_str = utf8_ucs4_cvt.from_bytes(u8_source_str); // utf-8 to ucs4
-
-    }
     
     {
         // UTF-8到UTF-16和UTF-16到UTF-8的编码转换
@@ -300,8 +287,55 @@ void char_test() {
     
 }
 
+
+
+void printInt(const int& value) {
+    std::cout<<value<<" ";
+}
+
+void printElem(const cycle_queue<int>& cq) {
+    std::cout<<"("<<cq.front()<<") ";
+    const int n = cq.count();
+    for (int i=0; i<n; ++i) {
+        std::cout<<cq[i]<<" ";
+    }
+    
+    std::cout<<std::endl;
+}
+
+void Test_CycleQueue() {
+    cycle_queue<int> cq;
+    
+    cq.initialize(5);
+    
+    cq.append(1);
+    cq.append(2);
+    cq.append(3);
+    cq.append(4);
+    cq.append(5);
+    printElem(cq);
+    cq.print_debug(printInt);
+    cq.append(6);
+    printElem(cq);
+    cq.print_debug(printInt);
+    cq.append(7);
+    cq.append(8);
+    cq.append(9);
+    cq.append(10);
+    printElem(cq);
+    cq.print_debug(printInt);
+    cq.append(11);
+    cq.append(12);
+    cq.append(13);
+    printElem(cq);
+    cq.print_debug(printInt);
+}
+
 int main(int argc, char* argv[]) {
     using namespace std;
+    
+    Test_CycleQueue();
+    std::cout<<std::endl;
     
     wchar_t bool_buf[8] = {'c','c','c','c','c','c','c','c'};
     std::size_t l = inf::cstr_from_bool(bool_buf, 8, false);

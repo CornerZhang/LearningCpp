@@ -45,6 +45,7 @@
 		0A44B5081C7035B700D11733 /* litdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = litdef.h; path = inf/litdef.h; sourceTree = "<group>"; };
 		0A44B5091C7035B700D11733 /* multimethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = multimethods.h; path = inf/multimethods.h; sourceTree = "<group>"; };
 		0A44B50A1C7035B700D11733 /* sort_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sort_def.h; path = inf/sort_def.h; sourceTree = "<group>"; };
+		0A4856BC1C8EB7A200D0EE6F /* CycleQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleQueue.h; sourceTree = SOURCE_ROOT; };
 		0AC681421C1EBEBA0074C499 /* MultiMethods_Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiMethods_Test.cpp; sourceTree = SOURCE_ROOT; };
 		0AC681451C1EC00C0074C499 /* MultiMethods_Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiMethods_Test.h; sourceTree = SOURCE_ROOT; };
 		0AC851801BF098AF00E48A0D /* DemoCpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DemoCpp; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +102,7 @@
 		0AC851821BF098AF00E48A0D /* DemoCpp */ = {
 			isa = PBXGroup;
 			children = (
+				0A4856BC1C8EB7A200D0EE6F /* CycleQueue.h */,
 				0AC681451C1EC00C0074C499 /* MultiMethods_Test.h */,
 				0AC681421C1EBEBA0074C499 /* MultiMethods_Test.cpp */,
 				0AC8518A1BF0990600E48A0D /* main.cpp */,
