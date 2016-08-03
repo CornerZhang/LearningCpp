@@ -20,6 +20,9 @@
 #include <allocator_def.h>
 #include "MultiMethods_Test.h"
 #include "CycleQueue.h"
+#include "sys_mac.h"
+#include "TestLitdef.h"
+#include "BTree.h"
 
 namespace {
     template <typename Type>
@@ -81,16 +84,6 @@ public:
     }
 };
 
-template <typename T>
-class vector_ex: private std::vector<T> {
-public:
-    using std::vector<T>::vector;
-    
-    T* alloc_to_back() {
-        return nullptr;
-    }
-};
-
 void char_test() {
     std::allocator_traits<inf::allocator<char>>::allocator_type a;
     
@@ -116,8 +109,6 @@ void char_test() {
     Extent et(45);
     et.foo();
     
-    vector_ex<int> vit(34, 8);
-
     // utf-8
     char u_c = u8c('C');
     char u8_array[] = u8s("中");
@@ -334,8 +325,19 @@ void Test_CycleQueue() {
 int main(int argc, char* argv[]) {
     using namespace std;
     
+//    fatal_error("dfasfdasfasdf");
+    
     Test_CycleQueue();
     std::cout<<std::endl;
+    
+    Test_litdef();
+    int alit = lit_demo<int>::One;
+    
+    {
+        inf::BTree<int,int,2> btree;
+        btree.init();
+        btree.shutdown();
+    }
     
     wchar_t bool_buf[8] = {'c','c','c','c','c','c','c','c'};
     std::size_t l = inf::cstr_from_bool(bool_buf, 8, false);

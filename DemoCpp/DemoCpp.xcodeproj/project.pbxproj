@@ -9,8 +9,14 @@
 /* Begin PBXBuildFile section */
 		0A0373C31BFC22DB008CF9B6 /* SubSystem_A.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0373C11BFC22DB008CF9B6 /* SubSystem_A.cpp */; };
 		0A0373C61BFC22ED008CF9B6 /* SubSystem_B.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0373C41BFC22ED008CF9B6 /* SubSystem_B.cpp */; };
+		0A19565F1D51E5C0001E6853 /* TestLitdef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A19565D1D51E5C0001E6853 /* TestLitdef.cpp */; };
+		0A1956611D51E8B5001E6853 /* litdef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A1956601D51E8B5001E6853 /* litdef.cpp */; };
+		0A1956631D51EE64001E6853 /* Heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A218E971D42198A003E01FB /* Heap.cpp */; };
 		0A44B50B1C7035B700D11733 /* cmd_arg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A44B5011C7035B700D11733 /* cmd_arg.cpp */; };
 		0A44B50C1C7035B700D11733 /* endian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A44B5051C7035B700D11733 /* endian.cpp */; };
+		0AC5B6F71D40B4B400E55E93 /* SysLock_posix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5B6F51D40B4B400E55E93 /* SysLock_posix.cpp */; };
+		0AC5B6FA1D40BA9600E55E93 /* Lock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5B6F81D40BA9600E55E93 /* Lock.cpp */; };
+		0AC5B6FD1D40C1D300E55E93 /* sys_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5B6FB1D40C1D300E55E93 /* sys_mac.mm */; };
 		0AC681431C1EBEBA0074C499 /* MultiMethods_Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC681421C1EBEBA0074C499 /* MultiMethods_Test.cpp */; };
 		0AC8518B1BF0990600E48A0D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8518A1BF0990600E48A0D /* main.cpp */; };
 /* End PBXBuildFile section */
@@ -33,6 +39,12 @@
 		0A0373C21BFC22DB008CF9B6 /* SubSystem_A.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SubSystem_A.hpp; sourceTree = SOURCE_ROOT; };
 		0A0373C41BFC22ED008CF9B6 /* SubSystem_B.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SubSystem_B.cpp; sourceTree = SOURCE_ROOT; };
 		0A0373C51BFC22ED008CF9B6 /* SubSystem_B.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SubSystem_B.hpp; sourceTree = SOURCE_ROOT; };
+		0A19565D1D51E5C0001E6853 /* TestLitdef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestLitdef.cpp; sourceTree = SOURCE_ROOT; };
+		0A19565E1D51E5C0001E6853 /* TestLitdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLitdef.h; sourceTree = SOURCE_ROOT; };
+		0A1956601D51E8B5001E6853 /* litdef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = litdef.cpp; sourceTree = "<group>"; };
+		0A1956621D51EE38001E6853 /* BTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTree.h; path = inf/BTree.h; sourceTree = "<group>"; };
+		0A1956641D51F140001E6853 /* SysLock_win.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SysLock_win.cpp; path = inf/SysLock_win.cpp; sourceTree = "<group>"; };
+		0A218E971D42198A003E01FB /* Heap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Heap.cpp; path = inf/Heap.cpp; sourceTree = "<group>"; };
 		0A44B4FF1C7035B700D11733 /* allocator_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = allocator_def.h; path = inf/allocator_def.h; sourceTree = "<group>"; };
 		0A44B5001C7035B700D11733 /* binsearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = binsearch.h; path = inf/binsearch.h; sourceTree = "<group>"; };
 		0A44B5011C7035B700D11733 /* cmd_arg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cmd_arg.cpp; path = inf/cmd_arg.cpp; sourceTree = "<group>"; };
@@ -46,6 +58,13 @@
 		0A44B5091C7035B700D11733 /* multimethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = multimethods.h; path = inf/multimethods.h; sourceTree = "<group>"; };
 		0A44B50A1C7035B700D11733 /* sort_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sort_def.h; path = inf/sort_def.h; sourceTree = "<group>"; };
 		0A4856BC1C8EB7A200D0EE6F /* CycleQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleQueue.h; sourceTree = SOURCE_ROOT; };
+		0AC5B6F31D40B3E400E55E93 /* Heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Heap.h; path = inf/Heap.h; sourceTree = "<group>"; };
+		0AC5B6F51D40B4B400E55E93 /* SysLock_posix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SysLock_posix.cpp; path = inf/SysLock_posix.cpp; sourceTree = "<group>"; };
+		0AC5B6F61D40B4B400E55E93 /* SysLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SysLock.h; path = inf/SysLock.h; sourceTree = "<group>"; };
+		0AC5B6F81D40BA9600E55E93 /* Lock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Lock.cpp; path = inf/Lock.cpp; sourceTree = "<group>"; };
+		0AC5B6F91D40BA9600E55E93 /* Lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lock.h; path = inf/Lock.h; sourceTree = "<group>"; };
+		0AC5B6FB1D40C1D300E55E93 /* sys_mac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = sys_mac.mm; sourceTree = "<group>"; };
+		0AC5B6FC1D40C1D300E55E93 /* sys_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sys_mac.h; sourceTree = "<group>"; };
 		0AC681421C1EBEBA0074C499 /* MultiMethods_Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiMethods_Test.cpp; sourceTree = SOURCE_ROOT; };
 		0AC681451C1EC00C0074C499 /* MultiMethods_Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiMethods_Test.h; sourceTree = SOURCE_ROOT; };
 		0AC851801BF098AF00E48A0D /* DemoCpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DemoCpp; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +85,7 @@
 		0AB138D91C215FEB008925E4 /* inf */ = {
 			isa = PBXGroup;
 			children = (
-				0A44B4FF1C7035B700D11733 /* allocator_def.h */,
+				0A1956621D51EE38001E6853 /* BTree.h */,
 				0A44B5001C7035B700D11733 /* binsearch.h */,
 				0A44B5011C7035B700D11733 /* cmd_arg.cpp */,
 				0A44B5021C7035B700D11733 /* cmd_arg.h */,
@@ -75,9 +94,20 @@
 				0A44B5051C7035B700D11733 /* endian.cpp */,
 				0A44B5061C7035B700D11733 /* endian.h */,
 				0A44B5071C7035B700D11733 /* finders.h */,
+				0A1956601D51E8B5001E6853 /* litdef.cpp */,
 				0A44B5081C7035B700D11733 /* litdef.h */,
 				0A44B5091C7035B700D11733 /* multimethods.h */,
 				0A44B50A1C7035B700D11733 /* sort_def.h */,
+				0A44B4FF1C7035B700D11733 /* allocator_def.h */,
+				0AC5B6F31D40B3E400E55E93 /* Heap.h */,
+				0A218E971D42198A003E01FB /* Heap.cpp */,
+				0AC5B6F61D40B4B400E55E93 /* SysLock.h */,
+				0AC5B6F51D40B4B400E55E93 /* SysLock_posix.cpp */,
+				0A1956641D51F140001E6853 /* SysLock_win.cpp */,
+				0AC5B6F81D40BA9600E55E93 /* Lock.cpp */,
+				0AC5B6F91D40BA9600E55E93 /* Lock.h */,
+				0AC5B6FB1D40C1D300E55E93 /* sys_mac.mm */,
+				0AC5B6FC1D40C1D300E55E93 /* sys_mac.h */,
 			);
 			name = inf;
 			sourceTree = "<group>";
@@ -105,6 +135,8 @@
 				0A4856BC1C8EB7A200D0EE6F /* CycleQueue.h */,
 				0AC681451C1EC00C0074C499 /* MultiMethods_Test.h */,
 				0AC681421C1EBEBA0074C499 /* MultiMethods_Test.cpp */,
+				0A19565D1D51E5C0001E6853 /* TestLitdef.cpp */,
+				0A19565E1D51E5C0001E6853 /* TestLitdef.h */,
 				0AC8518A1BF0990600E48A0D /* main.cpp */,
 				0A0373C01BFC2166008CF9B6 /* precompile.h */,
 				0A0373C11BFC22DB008CF9B6 /* SubSystem_A.cpp */,
@@ -171,12 +203,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC5B6FA1D40BA9600E55E93 /* Lock.cpp in Sources */,
 				0A44B50C1C7035B700D11733 /* endian.cpp in Sources */,
 				0AC681431C1EBEBA0074C499 /* MultiMethods_Test.cpp in Sources */,
+				0A1956631D51EE64001E6853 /* Heap.cpp in Sources */,
+				0A19565F1D51E5C0001E6853 /* TestLitdef.cpp in Sources */,
+				0AC5B6FD1D40C1D300E55E93 /* sys_mac.mm in Sources */,
 				0A44B50B1C7035B700D11733 /* cmd_arg.cpp in Sources */,
+				0AC5B6F71D40B4B400E55E93 /* SysLock_posix.cpp in Sources */,
 				0AC8518B1BF0990600E48A0D /* main.cpp in Sources */,
 				0A0373C61BFC22ED008CF9B6 /* SubSystem_B.cpp in Sources */,
 				0A0373C31BFC22DB008CF9B6 /* SubSystem_A.cpp in Sources */,
+				0A1956611D51E8B5001E6853 /* litdef.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

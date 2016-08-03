@@ -470,7 +470,7 @@ namespace inf {
     }
 
     template <typename char_type>
-    void cstr_copynz(char_type* dest, const char_type* src, int count);
+    void cstr_copynz(char_type* dest, const char_type* src, unsigned long count);
     
     template<typename char_type>
     std::size_t cstr_from_bool(char_type* cstr_dst, std::size_t cstr_dst_len, bool value) {
@@ -616,7 +616,7 @@ namespace inf {
     }
     
     template<typename char_type>
-    std::size_t cstr_find_first_char( const char_type *str, const char_type c, int start = 0, int end = INVALID_POSITION) {
+    std::size_t cstr_find_first_char( const char_type *str, const char_type c, int start = 0, long end = INVALID_POSITION) {
         std::size_t i;
         
         assert(str);
@@ -835,7 +835,7 @@ namespace inf {
     }
     
     template <typename char_type>
-    void cstr_copynz(char_type* dest, const char_type* src, int count) {
+    void cstr_copynz(char_type* dest, const char_type* src, unsigned long count) {
         if ( !src ) {
             assert( false && "cstr_copynz: NULL src" );
             return;
@@ -850,7 +850,7 @@ namespace inf {
     }
     
     template <typename char_type>
-    void cstr_append( char_type *dest_buf, int dest_size, const char_type *src ) {
+    void cstr_append( char_type *dest_buf, std::size_t dest_size, const char_type *src ) {
         std::size_t		dest_realsize;
         
         dest_realsize = cstr_length( dest_buf );

@@ -95,6 +95,22 @@ public:
         }
         std::cout<<std::endl;
     }
+    
+    struct member_def {
+        int used_count;
+        int front_index;
+        int rear_index;
+    };
+    
+    void    _set_member_def( const member_def& def ) {
+        used_count = def.used_count;
+        front_index = def.front_index;
+        rear_index = def.rear_index;
+    }
+    
+    member_def _get_member_def() const {
+        return member_def(used_count,front_index,rear_index);
+    }
 private:
     int     rebuild_index(int index) const {
         return index % allocated_count;
