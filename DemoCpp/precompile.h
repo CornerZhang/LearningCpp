@@ -18,7 +18,4 @@
 //#import <Foundation/Foundation.h>
 //#endif
 
-#include "SubSystem_A.hpp"
-#include "SubSystem_B.hpp"
-
 #endif /* precompile_h */

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A0373C31BFC22DB008CF9B6 /* SubSystem_A.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0373C11BFC22DB008CF9B6 /* SubSystem_A.cpp */; };
-		0A0373C61BFC22ED008CF9B6 /* SubSystem_B.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A0373C41BFC22ED008CF9B6 /* SubSystem_B.cpp */; };
 		0A19565F1D51E5C0001E6853 /* TestLitdef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A19565D1D51E5C0001E6853 /* TestLitdef.cpp */; };
 		0A1956611D51E8B5001E6853 /* litdef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A1956601D51E8B5001E6853 /* litdef.cpp */; };
 		0A1956631D51EE64001E6853 /* Heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A218E971D42198A003E01FB /* Heap.cpp */; };
@@ -19,6 +17,7 @@
 		0AC5B6FD1D40C1D300E55E93 /* sys_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5B6FB1D40C1D300E55E93 /* sys_mac.mm */; };
 		0AC681431C1EBEBA0074C499 /* MultiMethods_Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC681421C1EBEBA0074C499 /* MultiMethods_Test.cpp */; };
 		0AC8518B1BF0990600E48A0D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8518A1BF0990600E48A0D /* main.cpp */; };
+		A4267E151D6D951300C76600 /* async_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4267E131D6D951300C76600 /* async_queue.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,10 +34,6 @@
 
 /* Begin PBXFileReference section */
 		0A0373C01BFC2166008CF9B6 /* precompile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = precompile.h; sourceTree = SOURCE_ROOT; };
-		0A0373C11BFC22DB008CF9B6 /* SubSystem_A.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SubSystem_A.cpp; sourceTree = SOURCE_ROOT; };
-		0A0373C21BFC22DB008CF9B6 /* SubSystem_A.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SubSystem_A.hpp; sourceTree = SOURCE_ROOT; };
-		0A0373C41BFC22ED008CF9B6 /* SubSystem_B.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SubSystem_B.cpp; sourceTree = SOURCE_ROOT; };
-		0A0373C51BFC22ED008CF9B6 /* SubSystem_B.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SubSystem_B.hpp; sourceTree = SOURCE_ROOT; };
 		0A19565D1D51E5C0001E6853 /* TestLitdef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestLitdef.cpp; sourceTree = SOURCE_ROOT; };
 		0A19565E1D51E5C0001E6853 /* TestLitdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLitdef.h; sourceTree = SOURCE_ROOT; };
 		0A1956601D51E8B5001E6853 /* litdef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = litdef.cpp; sourceTree = "<group>"; };
@@ -69,6 +64,8 @@
 		0AC681451C1EC00C0074C499 /* MultiMethods_Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiMethods_Test.h; sourceTree = SOURCE_ROOT; };
 		0AC851801BF098AF00E48A0D /* DemoCpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DemoCpp; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC8518A1BF0990600E48A0D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		A4267E131D6D951300C76600 /* async_queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = async_queue.cpp; sourceTree = SOURCE_ROOT; };
+		A4267E141D6D951300C76600 /* async_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = async_queue.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +129,8 @@
 		0AC851821BF098AF00E48A0D /* DemoCpp */ = {
 			isa = PBXGroup;
 			children = (
+				A4267E131D6D951300C76600 /* async_queue.cpp */,
+				A4267E141D6D951300C76600 /* async_queue.h */,
 				0A4856BC1C8EB7A200D0EE6F /* CycleQueue.h */,
 				0AC681451C1EC00C0074C499 /* MultiMethods_Test.h */,
 				0AC681421C1EBEBA0074C499 /* MultiMethods_Test.cpp */,
@@ -139,10 +138,6 @@
 				0A19565E1D51E5C0001E6853 /* TestLitdef.h */,
 				0AC8518A1BF0990600E48A0D /* main.cpp */,
 				0A0373C01BFC2166008CF9B6 /* precompile.h */,
-				0A0373C11BFC22DB008CF9B6 /* SubSystem_A.cpp */,
-				0A0373C21BFC22DB008CF9B6 /* SubSystem_A.hpp */,
-				0A0373C41BFC22ED008CF9B6 /* SubSystem_B.cpp */,
-				0A0373C51BFC22ED008CF9B6 /* SubSystem_B.hpp */,
 			);
 			path = DemoCpp;
 			sourceTree = "<group>";
@@ -205,6 +200,7 @@
 			files = (
 				0AC5B6FA1D40BA9600E55E93 /* Lock.cpp in Sources */,
 				0A44B50C1C7035B700D11733 /* endian.cpp in Sources */,
+				A4267E151D6D951300C76600 /* async_queue.cpp in Sources */,
 				0AC681431C1EBEBA0074C499 /* MultiMethods_Test.cpp in Sources */,
 				0A1956631D51EE64001E6853 /* Heap.cpp in Sources */,
 				0A19565F1D51E5C0001E6853 /* TestLitdef.cpp in Sources */,
@@ -212,8 +208,6 @@
 				0A44B50B1C7035B700D11733 /* cmd_arg.cpp in Sources */,
 				0AC5B6F71D40B4B400E55E93 /* SysLock_posix.cpp in Sources */,
 				0AC8518B1BF0990600E48A0D /* main.cpp in Sources */,
-				0A0373C61BFC22ED008CF9B6 /* SubSystem_B.cpp in Sources */,
-				0A0373C31BFC22DB008CF9B6 /* SubSystem_A.cpp in Sources */,
 				0A1956611D51E8B5001E6853 /* litdef.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
