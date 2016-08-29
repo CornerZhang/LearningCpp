@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A444EC4A1D7038F300FD43BD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A444EC491D7038F300FD43BD /* main.cpp */; };
+		A47970651D73CBCF0017D3C6 /* JsonCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A47970631D73CBCF0017D3C6 /* JsonCommand.cpp */; };
+		A479706E1D741F260017D3C6 /* ConsoleUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A47970671D741F260017D3C6 /* ConsoleUtility.cpp */; };
+		A479706F1D741F260017D3C6 /* NetConsole_Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A47970691D741F260017D3C6 /* NetConsole_Command.cpp */; };
+		A47970701D741F260017D3C6 /* NetConsole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A479706A1D741F260017D3C6 /* NetConsole.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +46,15 @@
 		A444EC601D70395F00FD43BD /* stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stream.h; path = rapidjson/include/rapidjson/stream.h; sourceTree = "<group>"; };
 		A444EC611D70395F00FD43BD /* stringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stringbuffer.h; path = rapidjson/include/rapidjson/stringbuffer.h; sourceTree = "<group>"; };
 		A444EC621D70395F00FD43BD /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = writer.h; path = rapidjson/include/rapidjson/writer.h; sourceTree = "<group>"; };
+		A47970631D73CBCF0017D3C6 /* JsonCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JsonCommand.cpp; sourceTree = "<group>"; };
+		A47970641D73CBCF0017D3C6 /* JsonCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonCommand.h; sourceTree = "<group>"; };
+		A47970671D741F260017D3C6 /* ConsoleUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConsoleUtility.cpp; path = NetConsole/ConsoleUtility.cpp; sourceTree = "<group>"; };
+		A47970681D741F260017D3C6 /* ConsoleUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConsoleUtility.h; path = NetConsole/ConsoleUtility.h; sourceTree = "<group>"; };
+		A47970691D741F260017D3C6 /* NetConsole_Command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NetConsole_Command.cpp; path = NetConsole/NetConsole_Command.cpp; sourceTree = "<group>"; };
+		A479706A1D741F260017D3C6 /* NetConsole.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NetConsole.cpp; path = NetConsole/NetConsole.cpp; sourceTree = "<group>"; };
+		A479706B1D741F260017D3C6 /* NetConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetConsole.h; path = NetConsole/NetConsole.h; sourceTree = "<group>"; };
+		A479706C1D741F260017D3C6 /* NetConsolePrequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetConsolePrequest.h; path = NetConsole/NetConsolePrequest.h; sourceTree = "<group>"; };
+		A479706D1D741F260017D3C6 /* PlatformConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlatformConfig.h; path = NetConsole/PlatformConfig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +87,11 @@
 		A444EC481D7038F300FD43BD /* Demo_RapidJSON */ = {
 			isa = PBXGroup;
 			children = (
+				A47970661D741F130017D3C6 /* NetConsole */,
 				A444EC501D70393F00FD43BD /* rapidjson_include */,
 				A444EC491D7038F300FD43BD /* main.cpp */,
+				A47970631D73CBCF0017D3C6 /* JsonCommand.cpp */,
+				A47970641D73CBCF0017D3C6 /* JsonCommand.h */,
 			);
 			path = Demo_RapidJSON;
 			sourceTree = "<group>";
@@ -110,6 +126,20 @@
 				A444EC621D70395F00FD43BD /* writer.h */,
 			);
 			name = rapidjson;
+			sourceTree = "<group>";
+		};
+		A47970661D741F130017D3C6 /* NetConsole */ = {
+			isa = PBXGroup;
+			children = (
+				A47970671D741F260017D3C6 /* ConsoleUtility.cpp */,
+				A47970681D741F260017D3C6 /* ConsoleUtility.h */,
+				A47970691D741F260017D3C6 /* NetConsole_Command.cpp */,
+				A479706A1D741F260017D3C6 /* NetConsole.cpp */,
+				A479706B1D741F260017D3C6 /* NetConsole.h */,
+				A479706C1D741F260017D3C6 /* NetConsolePrequest.h */,
+				A479706D1D741F260017D3C6 /* PlatformConfig.h */,
+			);
+			name = NetConsole;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A444EC4A1D7038F300FD43BD /* main.cpp in Sources */,
+				A47970651D73CBCF0017D3C6 /* JsonCommand.cpp in Sources */,
+				A479706E1D741F260017D3C6 /* ConsoleUtility.cpp in Sources */,
+				A479706F1D741F260017D3C6 /* NetConsole_Command.cpp in Sources */,
+				A47970701D741F260017D3C6 /* NetConsole.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +293,10 @@
 		A444EC4E1D7038F300FD43BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Demo_RapidJSON/rapidjson/include";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Demo_RapidJSON/rapidjson/include",
+					"$(SRCROOT)/Demo_RapidJSON/NetConsole/",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -267,7 +304,10 @@
 		A444EC4F1D7038F300FD43BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Demo_RapidJSON/rapidjson/include";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Demo_RapidJSON/rapidjson/include",
+					"$(SRCROOT)/Demo_RapidJSON/NetConsole/",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -291,6 +331,7 @@
 				A444EC4F1D7038F300FD43BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
