@@ -55,10 +55,20 @@ namespace {
     }
 }
 
+typedef enum {
+    ST_NONE,
+    ST_ONE,
+    ST_TWO
+} stone_t;
+
 class Base {
+private:
+    int x, y;
+protected:
+    float scale;
 public:
     Base(int a) {
-        
+        int ab = 80;
         
     }
     
@@ -68,6 +78,7 @@ public:
     
     void foo() {}
     void foo(int a) {}
+    
 };
 
 class Extent: private Base {

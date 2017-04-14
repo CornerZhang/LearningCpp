@@ -9,9 +9,16 @@
 #include <iostream>
 #include <cassert>
 
-#include "rapidjson/document.h"
-#include "rapidjson/writer.h"
-#include "rapidjson/stringbuffer.h"
+#include <rapidjson/document.h>
+#include <rapidjson/writer.h>
+#include <rapidjson/stringbuffer.h>
+
+typedef rapidjson::UTF8<> Encoding;
+typedef rapidjson::GenericStringBuffer<Encoding> StringBuffer;
+typedef StringBuffer::Ch    Char;
+typedef rapidjson::GenericDocument<Encoding> Document;
+typedef rapidjson::GenericValue<Encoding> Value;
+typedef rapidjson::Writer<StringBuffer> JsonWriter;
 
 using namespace rapidjson;
 
@@ -124,7 +131,8 @@ public:
 Command c;
 
 struct JValue: protected Value {
-    JValue(Type t) : Value(t) {}
+    using Value::Value;
+    
     
     template<typename T>
     void PushValue(T value) {

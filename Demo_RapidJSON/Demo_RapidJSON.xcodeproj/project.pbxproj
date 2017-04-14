@@ -291,6 +291,7 @@
 				A444EC4F1D7038F300FD43BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
