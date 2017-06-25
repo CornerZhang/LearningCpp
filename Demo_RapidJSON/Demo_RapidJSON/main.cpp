@@ -6,9 +6,10 @@
 //  Copyright © 2016 Cyberzei. All rights reserved.
 //
 
-#include <iostream>
-#include <cassert>
+#include "JsonCommand.h"
+#include "NetConsole.h"
 
+<<<<<<< HEAD
 #include <rapidjson/document.h>
 #include <rapidjson/writer.h>
 #include <rapidjson/stringbuffer.h>
@@ -139,32 +140,31 @@ struct JValue: protected Value {
         PushBack(value, c.get_allocator());
     }
 };
+=======
+/*
+ terminal:
+    nc 127.0.0.1 5600
+    >help
+    >
+ */
+>>>>>>> 61a844674c78dab3e8891970b905a94b6471cf98
 
 int main() {
-    c.build_cmd_get_code("122324312413", 1);
-    c.print();
-    
-    c.build_cmd_get_code("13611748901", 1);
-    c.print();
-    
-    c.build_cmd_get_code("13611748908", 1);
-    c.print();
+    // listen on console
+    netConsole->listenOnTCP(5600);
     
     // on logic code
-    c.build_cmd(Command::GetCode, {"mobile","13611748901"}, {"type","1"});
-    c.build_cmd(Command::RegisterUser, {"name","CornerZhang"}, {"psw","111111"}, {"vcode","231224"});
-    JValue a(kArrayType);
-    a.PushValue(1);
-    a.PushValue(2);
-    c.build_cmd(Command::LoginUser, &a, {"name","CornerZhang"},{"psw","111111"},{"playerId","34"});
+    jcmd->build_cmd_GetCode("13611748901", 1);
+    jcmd->print();
     
-    // on console
-    const char* bodyText = "{\"event\":\"sinsons\",\"type\":1,\"lng\":343.3,\"lat\":22.11}";
-    c.build_cmd(Command::EventOccur, bodyText);
+    jcmd->build_cmd_RegisterUser("CornerZhang", "111111", "231123");
+    jcmd->print();
     
-    // on debug
-    const char* cmdText = "{\"CMD_BODY\":{\"mobile\":\"13611748908\",\"type\":1},\"CMD_ID\":175,\"CMD_STATUS\":1,\"CMD_TYPE\":1,\"msgno\":2}";
-    c.build_cmd_raw(cmdText);
+    jcmd->build_cmd_LoginUser("CornerZhang", "111111", 1, "nouse", 23.1123, 43.233, 4);
+    jcmd->print();
+    
+    
+    sleep(1000000);
     
     return 0;
 }

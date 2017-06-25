@@ -74,8 +74,11 @@
 		A444EC481D7038F300FD43BD /* Demo_RapidJSON */ = {
 			isa = PBXGroup;
 			children = (
+				A47970661D741F130017D3C6 /* NetConsole */,
 				A444EC501D70393F00FD43BD /* rapidjson_include */,
 				A444EC491D7038F300FD43BD /* main.cpp */,
+				A47970631D73CBCF0017D3C6 /* JsonCommand.cpp */,
+				A47970641D73CBCF0017D3C6 /* JsonCommand.h */,
 			);
 			path = Demo_RapidJSON;
 			sourceTree = "<group>";
@@ -110,6 +113,19 @@
 				A444EC621D70395F00FD43BD /* writer.h */,
 			);
 			name = rapidjson;
+			sourceTree = "<group>";
+		};
+		A47970661D741F130017D3C6 /* NetConsole */ = {
+			isa = PBXGroup;
+			children = (
+				A47970671D741F260017D3C6 /* ConsoleUtility.cpp */,
+				A47970681D741F260017D3C6 /* ConsoleUtility.h */,
+				A47970691D741F260017D3C6 /* NetConsole_Command.cpp */,
+				A479706A1D741F260017D3C6 /* NetConsole.cpp */,
+				A479706B1D741F260017D3C6 /* NetConsole.h */,
+				A479706D1D741F260017D3C6 /* PlatformConfig.h */,
+			);
+			name = NetConsole;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
