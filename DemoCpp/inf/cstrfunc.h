@@ -442,7 +442,7 @@ namespace inf {
         for ( val=0; c_is_digit(str[i]) && i<max; i++ )
             val = 10 * val + (str[i] - c_def<char_type>::_0);
         
-        if ( str[i] == c_def<char_type>::Dot ) {
+        if ( str[i] == c_def<char_type>::dot ) {
             i++;
             
             for ( ; c_is_digit(str[i]) && i<max; i++ ) {

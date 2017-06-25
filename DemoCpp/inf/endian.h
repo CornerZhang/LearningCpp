@@ -13,6 +13,7 @@ namespace inf {
     int					little_long( int l );
     float				big_float( float l );
     float				little_float( float l );
+    double              big_double( double l );
     double				little_double( double l );
     void				big_rev_bytes( void *bp, int elsize, int elcount );
     void				little_rev_bytes( void *bp, int elsize, int elcount );

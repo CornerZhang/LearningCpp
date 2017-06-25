@@ -18,6 +18,8 @@
 		0AC681431C1EBEBA0074C499 /* MultiMethods_Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC681421C1EBEBA0074C499 /* MultiMethods_Test.cpp */; };
 		0AC8518B1BF0990600E48A0D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8518A1BF0990600E48A0D /* main.cpp */; };
 		A4267E151D6D951300C76600 /* async_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4267E131D6D951300C76600 /* async_queue.cpp */; };
+		A45C8E6B1EFFED290026FD4A /* BinaryData_Demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A45C8E691EFFED290026FD4A /* BinaryData_Demo.cpp */; };
+		A45C8E6D1F0005150026FD4A /* cstrprintf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A45C8E6C1F0005150026FD4A /* cstrprintf.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,6 +68,10 @@
 		0AC8518A1BF0990600E48A0D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
 		A4267E131D6D951300C76600 /* async_queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = async_queue.cpp; sourceTree = SOURCE_ROOT; };
 		A4267E141D6D951300C76600 /* async_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = async_queue.h; sourceTree = SOURCE_ROOT; };
+		A45C8E691EFFED290026FD4A /* BinaryData_Demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryData_Demo.cpp; sourceTree = SOURCE_ROOT; };
+		A45C8E6A1EFFED290026FD4A /* BinaryData_Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryData_Demo.h; sourceTree = SOURCE_ROOT; };
+		A45C8E6C1F0005150026FD4A /* cstrprintf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cstrprintf.cpp; path = inf/cstrprintf.cpp; sourceTree = "<group>"; };
+		A45C8E6E1F0005A60026FD4A /* cstrprintf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cstrprintf.h; path = inf/cstrprintf.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,8 @@
 				0A44B5001C7035B700D11733 /* binsearch.h */,
 				0A44B5011C7035B700D11733 /* cmd_arg.cpp */,
 				0A44B5021C7035B700D11733 /* cmd_arg.h */,
+				A45C8E6C1F0005150026FD4A /* cstrprintf.cpp */,
+				A45C8E6E1F0005A60026FD4A /* cstrprintf.h */,
 				0A44B5031C7035B700D11733 /* cstrfunc.h */,
 				0A44B5041C7035B700D11733 /* delcontainer.h */,
 				0A44B5051C7035B700D11733 /* endian.cpp */,
@@ -138,6 +146,8 @@
 				0A19565E1D51E5C0001E6853 /* TestLitdef.h */,
 				0AC8518A1BF0990600E48A0D /* main.cpp */,
 				0A0373C01BFC2166008CF9B6 /* precompile.h */,
+				A45C8E691EFFED290026FD4A /* BinaryData_Demo.cpp */,
+				A45C8E6A1EFFED290026FD4A /* BinaryData_Demo.h */,
 			);
 			path = DemoCpp;
 			sourceTree = "<group>";
@@ -205,10 +215,12 @@
 				0A1956631D51EE64001E6853 /* Heap.cpp in Sources */,
 				0A19565F1D51E5C0001E6853 /* TestLitdef.cpp in Sources */,
 				0AC5B6FD1D40C1D300E55E93 /* sys_mac.mm in Sources */,
+				A45C8E6D1F0005150026FD4A /* cstrprintf.cpp in Sources */,
 				0A44B50B1C7035B700D11733 /* cmd_arg.cpp in Sources */,
 				0AC5B6F71D40B4B400E55E93 /* SysLock_posix.cpp in Sources */,
 				0AC8518B1BF0990600E48A0D /* main.cpp in Sources */,
 				0A1956611D51E8B5001E6853 /* litdef.cpp in Sources */,
+				A45C8E6B1EFFED290026FD4A /* BinaryData_Demo.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +311,7 @@
 		0AC851881BF098AF00E48A0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ./precompile.h;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -308,6 +321,7 @@
 		0AC851891BF098AF00E48A0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ./precompile.h;
 				PRODUCT_NAME = "$(TARGET_NAME)";

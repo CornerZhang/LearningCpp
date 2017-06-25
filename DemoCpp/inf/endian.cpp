@@ -19,6 +19,7 @@ namespace inf {
     static int		(*_little_long)( int l );
     static float	(*_big_float)( float l );
     static float	(*_little_float)( float l );
+    static double   (*_big_double)( double l );
     static double	(*_little_double)( double l );
     static void		(*_big_rev_bytes)( void *bp, int elsize, int elcount );
     static void		(*_little_rev_rytes)( void *bp, int elsize, int elcount );
@@ -32,6 +33,7 @@ namespace inf {
     int		little_long( int l ) { return _little_long( l ); }
     float	big_float( float l ) { return _big_float( l ); }
     float	little_float( float l ) { return _little_float( l ); }
+    double	big_double( double l ) { return _big_double( l ); }
     double	little_double( double l ) { return _little_double( l ); }
     void	big_rev_bytes( void *bp, int elsize, int elcount ) { _big_rev_bytes( bp, elsize, elcount ); }
     void	little_rev_bytes( void *bp, int elsize, int elcount ) { _little_rev_rytes( bp, elsize, elcount ); }
@@ -329,6 +331,7 @@ namespace inf {
             _little_long = LongSwap;
             _big_float = FloatNoSwap;
             _little_float = FloatSwap;
+            _big_double = DoubleNoSwap;
             _little_double = DoubleSwap;
             _big_rev_bytes = RevBytesNoSwap;
             _little_rev_rytes = RevBytesSwap;
@@ -343,6 +346,7 @@ namespace inf {
             _little_long = LongNoSwap;
             _big_float = FloatSwap;
             _little_float = FloatNoSwap;
+            _big_double = DoubleSwap;
             _little_double = DoubleNoSwap;
             _big_rev_bytes = RevBytesSwap;
             _little_rev_rytes = RevBytesNoSwap;

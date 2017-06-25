@@ -6,6 +6,7 @@
 //  Copyright © 2015 huazhang. All rights reserved.
 //
 
+#include <stack>
 #include <string>
 #include <cstdlib>
 #include <iostream>
@@ -23,6 +24,7 @@
 #include "sys_mac.h"
 #include "TestLitdef.h"
 #include "BTree.h"
+#include "BinaryData_Demo.h"
 
 namespace {
     template <typename Type>
@@ -340,6 +342,8 @@ int main(int argc, char* argv[]) {
     
     Test_CycleQueue();
     std::cout<<std::endl;
+    
+    dat_file_testself();
     
     Test_litdef();
     int alit = lit_demo<int>::One;
