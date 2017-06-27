@@ -9,14 +9,6 @@
 #ifndef NetConsole_hpp
 #define NetConsole_hpp
 
-#include "NetConsolePrequest.h"
-#include <thread>
-#include <vector>
-#include <map>
-#include <functional>
-#include <string>
-#include <mutex>
-#include <stdarg.h>
 
 /*
  *  usage:

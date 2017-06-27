@@ -1,10 +1,6 @@
 #ifndef ConsoleUtility_h
 #define ConsoleUtility_h
 
-#include "NetConsolePrequest.h"
-#include <vector>
-#include <string>
-#include <thread>
 
 class ConsoleUtility {
 public:

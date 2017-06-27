@@ -9,12 +9,6 @@
 #ifndef JsonCommand_hpp
 #define JsonCommand_hpp
 
-#include <iostream>
-#include <cassert>
-
-#include "rapidjson/document.h"
-#include "rapidjson/writer.h"
-#include "rapidjson/stringbuffer.h"
 
 using namespace rapidjson;
 

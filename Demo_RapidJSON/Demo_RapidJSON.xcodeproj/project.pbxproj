@@ -46,6 +46,7 @@
 		A444EC601D70395F00FD43BD /* stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stream.h; path = rapidjson/include/rapidjson/stream.h; sourceTree = "<group>"; };
 		A444EC611D70395F00FD43BD /* stringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stringbuffer.h; path = rapidjson/include/rapidjson/stringbuffer.h; sourceTree = "<group>"; };
 		A444EC621D70395F00FD43BD /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = writer.h; path = rapidjson/include/rapidjson/writer.h; sourceTree = "<group>"; };
+		A461D97E1F0231BF0090C6A3 /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
 		A47970631D73CBCF0017D3C6 /* JsonCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JsonCommand.cpp; sourceTree = "<group>"; };
 		A47970641D73CBCF0017D3C6 /* JsonCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonCommand.h; sourceTree = "<group>"; };
 		A47970671D741F260017D3C6 /* ConsoleUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConsoleUtility.cpp; path = NetConsole/ConsoleUtility.cpp; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 				A47970661D741F130017D3C6 /* NetConsole */,
 				A444EC501D70393F00FD43BD /* rapidjson_include */,
 				A444EC491D7038F300FD43BD /* main.cpp */,
+				A461D97E1F0231BF0090C6A3 /* PrefixHeader.h */,
 				A47970631D73CBCF0017D3C6 /* JsonCommand.cpp */,
 				A47970641D73CBCF0017D3C6 /* JsonCommand.h */,
 			);
@@ -293,6 +295,12 @@
 		A444EC4E1D7038F300FD43BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_OPTIMIZATION_LEVEL = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo_RapidJSON/PrefixHeader.h";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/Demo_RapidJSON/rapidjson/include",
 					"$(SRCROOT)/Demo_RapidJSON/NetConsole/",
@@ -304,6 +312,12 @@
 		A444EC4F1D7038F300FD43BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo_RapidJSON/PrefixHeader.h";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/Demo_RapidJSON/rapidjson/include",
 					"$(SRCROOT)/Demo_RapidJSON/NetConsole/",

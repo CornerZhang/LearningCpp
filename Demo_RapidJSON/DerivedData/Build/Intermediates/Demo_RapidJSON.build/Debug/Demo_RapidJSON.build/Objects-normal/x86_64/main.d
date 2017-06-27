@@ -1,23 +1,2 @@
 dependencies: \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/main.cpp \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/document.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/reader.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/allocators.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/rapidjson.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/stream.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/encodings.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/internal/meta.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/internal/stack.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/internal/swap.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/internal/strtod.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/internal/ieee754.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/internal/biginteger.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/internal/diyfp.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/internal/pow10.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/error/error.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/internal/strfunc.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/internal/../stream.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/writer.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/internal/dtoa.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/internal/itoa.h \
-  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/rapidjson/include/rapidjson/stringbuffer.h
+  /Users/Shared/Source/Project/github/LearningCpp/Demo_RapidJSON/Demo_RapidJSON/main.cpp

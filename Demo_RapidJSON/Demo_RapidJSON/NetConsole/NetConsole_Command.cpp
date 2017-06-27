@@ -1,6 +1,4 @@
-#include "NetConsole.h"
-#include "ConsoleUtility.h"
-#include "JsonCommand.h"
+#include "PrefixHeader.h"
 
 // new callbacks based on C++11
 #define NC_CALLBACK_0(__selector__,__target__, ...) std::bind(&__selector__,__target__, ##__VA_ARGS__)

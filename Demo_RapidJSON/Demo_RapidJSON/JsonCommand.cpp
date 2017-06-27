@@ -6,7 +6,7 @@
 //  Copyright © 2016 Cyberzei. All rights reserved.
 //
 
-#include "JsonCommand.h"
+#include "PrefixHeader.h"
 
 
 JsonCommand* _PrivateInstallJsonCommand() {

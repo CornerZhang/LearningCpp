@@ -6,9 +6,8 @@
 //  Copyright © 2016 Cyberzei. All rights reserved.
 //
 
-#include "ConsoleUtility.h"
-#include <functional>
-#include <sstream>
+#include "PrefixHeader.h"
+
 
 
 static constexpr const char* PROMPT = "> ";

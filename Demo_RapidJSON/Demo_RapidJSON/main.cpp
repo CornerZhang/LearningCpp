@@ -6,13 +6,7 @@
 //  Copyright © 2016 Cyberzei. All rights reserved.
 //
 
-#include "JsonCommand.h"
-#include "NetConsole.h"
-
-<<<<<<< HEAD
-#include <rapidjson/document.h>
-#include <rapidjson/writer.h>
-#include <rapidjson/stringbuffer.h>
+#include "PrefixHeader.h"
 
 typedef rapidjson::UTF8<> Encoding;
 typedef rapidjson::GenericStringBuffer<Encoding> StringBuffer;
@@ -87,6 +81,7 @@ public:
         cmdDoc.Accept(writer);
         std::cout << buffer.GetString() << std::endl;
     }
+
     
     void build_cmd_get_code(const char* mobileNumber, int type) {
         
@@ -140,14 +135,13 @@ struct JValue: protected Value {
         PushBack(value, c.get_allocator());
     }
 };
-=======
+
 /*
  terminal:
     nc 127.0.0.1 5600
     >help
     >
  */
->>>>>>> 61a844674c78dab3e8891970b905a94b6471cf98
 
 int main() {
     // listen on console

@@ -6,8 +6,7 @@
 //  Copyright © 2016 Cyberzei. All rights reserved.
 //
 
-#include "NetConsole.h"
-#include "ConsoleUtility.h"
+#include "PrefixHeader.h"
 
 namespace {
     
@@ -228,6 +227,7 @@ bool NetConsole::listenOnTCP(int port)
         freeaddrinfo(ressave);
         return false;
     }
+
     
     listen(listenfd, 50);
     

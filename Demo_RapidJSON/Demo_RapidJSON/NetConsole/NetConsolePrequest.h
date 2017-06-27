@@ -10,7 +10,7 @@
 #define NetConsolePrequest_h
 
 
-#include "PlatformConfig.h"
+
 
 // define for ssize_t
 #if defined(_MSC_VER) || defined(__MINGW32__)
